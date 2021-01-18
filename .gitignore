@@ -1,5 +1,7 @@
 node_modules/
 img/
+Maket_verstat/
 
-package-*.json
+package*.*
+package.json
 *.zip
