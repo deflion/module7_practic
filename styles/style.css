@@ -17,6 +17,9 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+body .row {
+  align-items: center;
+}
 header {
   background-color: #EEEFF1;
 }
@@ -57,9 +60,6 @@ section {
 #first-screen {
   padding: 150px 0;
   background-color: #EEEFF1;
-}
-#first-screen .row {
-  align-items: center;
 }
 #first-screen img {
   width: 357px;
@@ -124,14 +124,10 @@ section {
   font-size: 1.5em;
 }
 #skills {
-  min-height: 650px;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 #skills h3 {
   margin-bottom: 40px;
-}
-#skills .row {
-  align-items: center;
 }
 #skills div[class^=skill_] {
   margin-bottom: 20px;
@@ -161,4 +157,28 @@ section {
 #video {
   max-height: 1004px;
   background-color: #EEEFF1;
+  padding: 100px 0;
+}
+#video .row {
+  justify-content: center;
+}
+#video .text_block {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#video .col-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#video .col-12 iframe {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/img/video_bg.png);
+  background-size: contain;
+}
+#video .col-12 .play-btn {
+  position: absolute;
+  background-image: url(/img/video_btn_play.png);
+  width: 100px;
+  height: 100px;
 }
