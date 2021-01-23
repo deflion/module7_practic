@@ -173,12 +173,12 @@ section {
   margin-bottom: 100px;
 }
 #video .col-12 iframe {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/img/video_bg.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(img/video_bg.png);
   background-size: contain;
 }
 #video .col-12 .play-btn {
   position: absolute;
-  background-image: url(/img/video_btn_play.svg);
+  background-image: url(img/video_btn_play.svg);
   width: 100px;
   height: 100px;
 }
@@ -210,7 +210,7 @@ section {
 }
 #projects .col-3 .overlay .overlay-icon {
   position: absolute;
-  background-image: url(/img/projects_hover_eye.svg);
+  background-image: url(img/projects_hover_eye.svg);
   width: 100px;
   height: 100px;
 }
@@ -222,19 +222,19 @@ section {
 }
 #projects .row:nth-child(n) .col-3:nth-child(n) {
   background-color: #727272;
-  background-image: url(/img/projects_1.png);
+  background-image: url(img/projects_1.png);
 }
 #projects .row:nth-child(n) .col-3:nth-child(2n) {
   background-color: #c4c4c4;
-  background-image: url(/img/projects_2.png);
+  background-image: url(img/projects_2.png);
 }
 #projects .row:nth-child(2n) .col-3:nth-child(n) {
   background-color: #c4c4c4;
-  background-image: url(/img/projects_2.png);
+  background-image: url(img/projects_2.png);
 }
 #projects .row:nth-child(2n) .col-3:nth-child(2n) {
   background-color: #727272;
-  background-image: url(/img/projects_1.png);
+  background-image: url(img/projects_1.png);
 }
 #clients {
   padding: 100px 0;
