@@ -123,6 +123,41 @@ section {
   font-weight: 500;
   font-size: 1.5em;
 }
+#skills {
+  min-height: 650px;
+  padding: 150px 0;
+}
+#skills h3 {
+  margin-bottom: 40px;
+}
+#skills .row {
+  align-items: center;
+}
+#skills div[class^=skill_] {
+  margin-bottom: 20px;
+}
+#skills div[class^=skill_] .label {
+  color: #727272;
+  font-size: 1rem;
+}
+#skills div[class^=skill_] div[class^=line_] {
+  height: 4px;
+  width: 450px;
+  background-color: #c4c4c4;
+}
+#skills div[class^=skill_] div[class^=line_] .procesed {
+  height: 4px;
+  background-color: #34547A;
+}
+#skills div[class^=skill_] .line_1 .procesed {
+  width: 400px;
+}
+#skills div[class^=skill_] .line_2 .procesed {
+  width: 370px;
+}
+#skills div[class^=skill_] .line_3 .procesed {
+  width: 250px;
+}
 #video {
   max-height: 1004px;
   background-color: #EEEFF1;
