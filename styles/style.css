@@ -15,10 +15,35 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
 }
 body .row {
   align-items: center;
+}
+body .btn {
+  color: whitesmoke;
+  background-color: #34547A;
+  padding: 10px 25px;
+  border-radius: 0;
+  text-transform: uppercase;
+  max-width: 40%;
+}
+body .btn:hover {
+  background-color: whitesmoke;
+  color: #34547A;
+  border: 1px solid #34547A;
+}
+body .btn:active {
+  background-color: #e9e9e9 !important;
+  color: #34547A !important;
+  border: 1px solid #34547A;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif !important;
 }
 header {
   background-color: #EEEFF1;
@@ -57,6 +82,13 @@ section {
 .container {
   width: 1920px;
 }
+.text-block {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.block-title {
+  margin-bottom: 50px;
+}
 #first-screen {
   padding: 150px 0;
   background-color: #EEEFF1;
@@ -69,26 +101,20 @@ section {
   flex-direction: column;
   justify-content: space-between;
   min-height: 300px;
+  text-align: left;
+}
+#first-screen .text-block h1 {
+  margin-bottom: 0;
 }
 #first-screen .text-block .description {
   color: #727272;
   font-size: 1rem;
 }
-#first-screen .text-block .btn {
-  color: whitesmoke;
-  background-color: #34547A;
-  padding: 10px 25px;
-  border-radius: 0;
-  text-transform: uppercase;
-  max-width: 40%;
-}
-#first-screen .text-block .btn:hover {
-  background-color: whitesmoke;
-  color: #34547A;
-  border: 1px solid #34547A;
-}
 #about-me {
   padding: 100px 0;
+}
+#about-me .text-block {
+  text-align: left;
 }
 #about-me .row {
   justify-content: center;
@@ -162,10 +188,6 @@ section {
 #video .row {
   justify-content: center;
 }
-#video .text_block {
-  text-align: center;
-  margin-bottom: 50px;
-}
 #video .col-12 {
   display: flex;
   align-items: center;
@@ -173,12 +195,12 @@ section {
   margin-bottom: 100px;
 }
 #video .col-12 iframe {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./img/video_bg.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/video_bg.png);
   background-size: contain;
 }
 #video .col-12 .play-btn {
   position: absolute;
-  background-image: url(./img/video_btn_play.svg);
+  background-image: url(../img/video_btn_play.svg);
   width: 100px;
   height: 100px;
 }
@@ -210,7 +232,7 @@ section {
 }
 #projects .col-3 .overlay .overlay-icon {
   position: absolute;
-  background-image: url(./img/projects_hover_eye.svg);
+  background-image: url(../img/projects_hover_eye.svg);
   width: 100px;
   height: 100px;
 }
@@ -222,33 +244,79 @@ section {
 }
 #projects .row:nth-child(n) .col-3:nth-child(n) {
   background-color: #727272;
-  background-image: url(./img/projects_1.png);
+  background-image: url(../img/projects_1.png);
 }
 #projects .row:nth-child(n) .col-3:nth-child(2n) {
   background-color: #c4c4c4;
-  background-image: url(./img/projects_2.png);
+  background-image: url(../img/projects_2.png);
 }
 #projects .row:nth-child(2n) .col-3:nth-child(n) {
   background-color: #c4c4c4;
-  background-image: url(./img/projects_2.png);
+  background-image: url(../img/projects_2.png);
 }
 #projects .row:nth-child(2n) .col-3:nth-child(2n) {
   background-color: #727272;
-  background-image: url(./img/projects_1.png);
+  background-image: url(../img/projects_1.png);
 }
 #clients {
   padding: 100px 0;
 }
 #contacts {
-  height: 750px;
+  padding: 150px 0px;
   background-color: #EEEFF1;
 }
 #contacts .row {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+#contacts .row:nth-child(1) {
+  margin-bottom: 10px;
+}
+#contacts form .form-row {
+  margin-bottom: 30px;
+}
+#contacts form input {
+  width: 255px;
+  height: 50px;
+  border-radius: 0;
+}
+#contacts form input[type="text"] {
+  margin-right: 30px;
+}
+#contacts form textarea {
+  border-radius: 0;
+  resize: none;
+  width: 540px;
+  height: 175px;
+}
+#contacts form .btn {
+  min-width: 190px;
+  margin: 0 auto;
 }
 footer {
-  height: 150px;
+  padding: 30px 0;
   background-color: #34547A;
+}
+footer .row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .copyright {
+  color: whitesmoke;
+}
+footer .copyright .block-title {
+  margin-bottom: 20px;
+}
+footer .copyright .description {
+  font-size: 0.75em;
+}
+footer .socicons {
+  text-align: right;
+}
+footer .socicons img {
+  width: 43.75px;
+  height: 22.22px;
 }

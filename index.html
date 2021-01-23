@@ -38,11 +38,11 @@
                         <img src="img/notebook_pic.svg" alt="">
                     </div>
                     <div class="col col-6 text-block">
-                        <h1>Дизайн и Верстка</h1>
+                        <h1 class="block-title">Дизайн и Верстка</h1>
                         <p class="description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
                             Lorem Ipsum является стандартной "рыбой" для 
                             текстов на латинице с начала XVI века.</p>
-                        <a class="btn" href="#">Написать мне</a>
+                        <a class="btn" href="#contacts">Написать мне</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-6">
-                        <h2>Обо мне</h2>
+                        <h2 class="block-title">Обо мне</h2>
                         <p>Lorem Ipsum - это текст-"рыба", 
                             часто используемый в печати и вэб-дизайне. 
                             Lorem Ipsum является стандартной "рыбой" для текстов на 
@@ -117,8 +117,8 @@
         <section id="skills">
             <div class="container">
                 <div class="row">
-                    <div class="col col-6 text-block">
-                        <h3>Мои навыки</h3>
+                    <div class="col col-6">
+                        <h2 class="block-title">Мои навыки</h2>
                         <div class="skill_1">
                             <p class="label">
                                 Adobe Photoshop
@@ -156,8 +156,8 @@
         <section id="video">
             <div class="container">
                 <div class="row">
-                    <div class="col col-6 text_block">
-                        <h3>Как я работаю</h3>
+                    <div class="col col-6 text-block">
+                        <h2 class="block-title">Как я работаю</h2>
                         <p>Lorem Ipsum - это текст-"рыба", 
                             часто используемый в печати и вэб-дизайне. 
                             Lorem Ipsum является стандартной "рыбой" для текстов на 
@@ -236,13 +236,53 @@
         </section>
 
         <section id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-6 text-block">
+                        <h2 class="block-title">Хотите вэб-сайт?</h2>
+                        <p>Lorem Ipsum - это текст-"рыба", 
+                            часто используемый в печати и вэб-дизайне. 
+                            Lorem Ipsum является стандартной "рыбой" для текстов на 
+                            латинице с начала XVI века.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-6">
+                        <form action="/" method="POST">
+                            <div class="form-row">
+                                <input class="form-control" type="text" name="fname" placeholder="Ваше имя" required>
+                                <input class="form-control" type="email" name="email" placeholder="Ваш e-mail"required>
+                            </div>
+                            <div class="form-row">
+                                <textarea class="form-control" name="subject" id="" cols="65" rows="10" 
+                                placeholder="Сообщение"  required></textarea>
+                            </div>
+                            <div class="form-row">
+                                <button class="btn btn-primary" type="submit">Оправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <div class="copyright"></div>
-        <div class="socicons"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col col-4 copyright footer-1">
+                    <h3 class="block-title">Евгений Фрост</h3>
+                    <p class="description">(с) 2021. Все права защищены.</p>
+                </div>
+                <div class="col col-4 footer-2"></div>
+                <div class="col col-4 socicons footer-3">
+                    <img src="../img/vk_logo.svg" alt="Наш Вконтаке">
+                    <img src="../img/vk_logo.svg" alt="Наш Вконтаке">
+                    <img src="../img/vk_logo.svg" alt="Наш Вконтаке">
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
