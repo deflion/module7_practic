@@ -1,5 +1,5 @@
 node_modules/
-img/
+# img/
 Maket_verstat/
 
 package*.*
